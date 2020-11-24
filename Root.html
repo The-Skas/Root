@@ -7,25 +7,48 @@
 .small-caps{text-transform:uppercase;font-size:70%;letter-spacing:.075em}#backdrop{min-height:100vh;align-items:center}#backdrop,#page{display:flex;justify-content:center}#page{flex-direction:column;width:40em;min-height:calc(100vh - 2em);max-width:calc(100vw - 2em);line-height:150%;margin:1em;padding:4em 4em 2em;position:relative}#page article{flex-grow:1;display:flex}#page article>:first-child{margin-top:0;width:100%}#page footer,#page header{display:flex}#page footer>div,#page header>div{flex-grow:1}#page footer p,#page header p{margin:.5em 0 0}#page footer .center,#page header .center{text-align:center}#page footer .right p,#page header .right p{text-align:right}#page header{margin-top:0}#page header.has-content{border-bottom:1px solid #000}#page header.has-content+article>article>div>p:first-child,#page header.has-content+article>div>p:first-child{margin-top:1em}#page footer{margin-bottom:0}#page footer.has-content{border-top:1px solid #000}#page hr{border:none}#page hr:after{content:"* \A0   * \A0   *";display:block;text-align:center}#page .error,#page .warning{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu Cantarell,Helvetica Neue,sans-serif;font-size:80%;background:#fff5f5;color:#c92a2a;padding:.5em;border-left:4px solid #ffa8a8;position:relative;margin-bottom:1em;overflow:auto}#page .error :first-child,#page .warning :first-child{margin-top:0}#page .error :last-child,#page .warning :last-child{margin-bottom:0}#page .error a,#page .warning a{color:#c92a2a}#page .warning{background:#fff9db;color:#e67700}#page .warning a{color:#e67700}#page .fork p{display:flex;flex-direction:column;width:100%}#page .fork p a{display:block;flex-grow:1;text-align:center;padding:.5em}@media screen and (max-width:768px){#page{margin:0;width:100vw;max-width:100vw;min-height:100vh;padding:1em}}#spinner{position:absolute;bottom:0;right:0;opacity:0;transition:opacity .25s ease-in-out;pointer-events:none}#spinner.visible{display:block;opacity:1}
 *{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%;height:auto}input[type=text],select{padding:.25em}pre{white-space:pre-wrap}tw-storydata{display:none}</style></head><body><form id="cb-validation" action="javascript:void(0)"><button id="cb-validation-tester" hidden></button> <button id="cb-block-enter-key" hidden></button><div id="backdrop"><div id="page" aria-live="polite"><header><div class="left"></div><div class="center"></div><div class="right"></div></header><article></article><ul class="warnings"></ul><footer><div class="left"></div><div class="center"></div><div class="right"></div></footer><div id="spinner"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogICAgPHJlY3QgeD0iMzEiIHk9IjE0IiB3aWR0aD0iMzgiIGhlaWdodD0iNzIiIHJ4PSI0IiBmaWxsPSJ3aGl0ZSIgLz4KICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjI4IiBmaWxsPSJ3aGl0ZSIgLz4KCTxyZWN0IHg9IjM1IiB5PSIxOCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjY0IiByeD0iNCIgZmlsbD0id2hpdGUiIHN0cm9rZS13aWR0aD0iMnB4IiBzdHJva2U9ImJsYWNrIiAvPgogICAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMjAiIHN0cm9rZT0iYmxhY2siIGZpbGw9IndoaXRlIiBzdHJva2Utd2lkdGg9IjJweCIgLz4KCTxsaW5lIHgxPSI1MCIgeTE9IjUwIiB4Mj0iNTAiIHkyPSIzNyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIycHgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0KICAgICAgICAgICAgYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIgogICAgICAgICAgICBiZWdpbj0iMHMiCiAgICAgICAgICAgIGR1cj0iMjBzIgogICAgICAgICAgICB0eXBlPSJyb3RhdGUiCiAgICAgICAgICAgIGZyb209IjAgNTAgNTAiCiAgICAgICAgICAgIHRvPSIzNjAgNTAgNTAiCiAgICAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIgogICAgICAgIC8+Cgk8L2xpbmU+Cgk8bGluZSB4MT0iNTAiIHkxPSI1MCIgeDI9IjQyIiB5Mj0iNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMnB4IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxhbmltYXRlVHJhbnNmb3JtCiAgICAgICAgICAgIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIKICAgICAgICAgICAgYmVnaW49IjBzIgogICAgICAgICAgICBkdXI9IjEyMHMiCiAgICAgICAgICAgIHR5cGU9InJvdGF0ZSIKICAgICAgICAgICAgZnJvbT0iMCA1MCA1MCIKICAgICAgICAgICAgdG89IjM2MCA1MCA1MCIKICAgICAgICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiCiAgICAgICAgLz4KCTwvbGluZT4KPC9zdmc+" width="40" height="40" alt=""></div></div></div></form><tw-storydata name="Root" startnode="1" creator="Twine" creator-version="2.3.9" ifid="D21F3B47-36C5-4D6A-99AB-FDF22636C10C" zoom="1" format="Chapbook" format-version="1.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.page{
     color: yellow;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">console.log("Test!adlfsjdfca");</script><tw-passagedata pid="1" name="A Story of Root" tags="paper" position="146,230" size="100,100">birdFinish: false
-catFinish: false
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.setup = {};
+
+setup.loadError = function(oError) {
+  throw new URIError("The script " + oError.target.src + " didn't load correctly.");
+};
+
+setup.loadScript = function(url, onloadFunction) {
+  var newScript = document.createElement("script");
+  newScript.onerror = setup.loadError;
+  if (onloadFunction) { newScript.onload = onloadFunction; }
+  document.head.appendChild(newScript);
+  newScript.async = true;
+  newScript.src = url;
+};
+</script><tw-passagedata pid="1" name="A Story of Root" tags="paper" position="132,158" size="100,100">birdFinish: false
+marquiseFinish: false
+duchyFinish: false
+vagabondFinish: false
+riverfolkFinish: false
+allianceFinish: false
+lizardFinish: false
 
 
 eyrie: false
 shogun: false
 --
-{embed passage: &quot;eyrie_variable&quot; }
+{embed passage: &quot;initial_variable&quot; }
 
 [CSS]
 #page {
-	background-image: url(&quot;img/paperparchment.jpg&quot;);
+	background-image: url(&quot;img/leather.jpg&quot;);
+
+}
+#page a {
+	color: white;
 }
 [continued]
 
 {embed image: &#39;https://i.postimg.cc/MK7KwL3Y/root-logo.png&#39;, alt: &#39;Cave entrance&#39;}
 
-**[[It Begins-&gt;Shogun Fuji Sora]]**
-</tw-passagedata><tw-passagedata pid="2" name="Health" tags="" position="1106,124" size="100,100">:: StoryTitle
+**[[It Begins-&gt;???]]**
+</tw-passagedata><tw-passagedata pid="2" name="Health" tags="" position="127,1039" size="100,100">:: StoryTitle
 Chapbook: Static Healthbars
 
 :: Start
@@ -48,11 +71,11 @@ Chapbook: Static Healthbars
 	// Write the meter element with dynamic value
 	write(&#39;&lt;meter value=&quot;&#39; + health + &#39;&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;&#39;);
 
-</tw-passagedata><tw-passagedata pid="3" name="Root" tags="" position="1103,244" size="100,100">What would you like to name your loyal canine companion?
+</tw-passagedata><tw-passagedata pid="3" name="Root" tags="" position="124,1159" size="100,100">What would you like to name your loyal canine companion?
 
 {text input for: &#39;dogName&#39;}
 
-[[Continue]]</tw-passagedata><tw-passagedata pid="4" name="Continue" tags="" position="1103,394" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="Door Passage" tags="" position="1314,446" size="100,100">doorFound: true
+[[Continue]]</tw-passagedata><tw-passagedata pid="4" name="Continue" tags="" position="124,1309" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="Door Passage" tags="" position="335,1361" size="100,100">doorFound: true
 hasKey: false
 doorUnlocked: false
 _doorOpen: doorFound &amp;&amp; doorUnlocked
@@ -73,10 +96,10 @@ ready to be [[unlocked]].
 but you haven&#39;t found a key yet that will open it.
 
 [if !doorFound]
-There seems to be nothing of note here, but perhaps [[a search would turn up something]].</tw-passagedata><tw-passagedata pid="6" name="enter it" tags="" position="1161,605" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="unlocked" tags="" position="1311,605" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="8" name="a search would turn up something" tags="" position="1461,605" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="DropDown" tags="" position="37,561" size="100,100">What meal do you enjoy most?
+There seems to be nothing of note here, but perhaps [[a search would turn up something]].</tw-passagedata><tw-passagedata pid="6" name="enter it" tags="" position="182,1520" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="unlocked" tags="" position="332,1520" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="8" name="a search would turn up something" tags="" position="482,1520" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="DropDown" tags="" position="37,561" size="100,100">What meal do you enjoy most?
 
 {dropdown menu for: &#39;meal&#39;, choices: [&#39;Breakfast&#39;, &#39;Lunch&#39;, &#39;Dinner&#39;]}
-[[test]]</tw-passagedata><tw-passagedata pid="10" name="Shogun Fuji Sora" tags="" position="169,402" size="100,100">shogun: true
+[[test]]</tw-passagedata><tw-passagedata pid="10" name="Shogun Fuji Sora" tags="" position="193,380" size="100,100">shogun: true
 
 birdFinish: false
 birdFinish ( shogun &amp;&amp; eyrie ) : true 
@@ -125,7 +148,7 @@ yayayaya
 
 [JavaScript]
 engine.state.set(&#39;weather&#39;, &#39;sunny&#39;);
-</tw-passagedata><tw-passagedata pid="12" name="The Eyrie" tags="" position="168,557" size="100,100">eyrie: true
+</tw-passagedata><tw-passagedata pid="12" name="The Eyrie" tags="" position="168,556" size="100,100">eyrie: true
  
 --
 [CSS]
@@ -169,41 +192,578 @@ You knock your Sensei to the ground with a perfectly angled Wing Dive, 7th form.
 
 For the Sensei to finally bow to you…
 
-You are ready. {back link, label: &#39;You are the Lord of the Forest&#39;}.
-</tw-passagedata><tw-passagedata pid="13" name="???" tags="" position="464,395" size="100,100">response: &quot;Back&quot;
+You are ready. 
+
+{reveal link: &quot;You are the Lord of the Forest&quot;, passage: &quot;???_Eyrie&quot;}
+</tw-passagedata><tw-passagedata pid="13" name="???" tags="" position="437,80" size="100,100">response: &quot;Back&quot;
 birdFinish ( shogun &amp;&amp; eyrie ) : true 
 --
 [Javascript]
-list_vars = [&quot;secret_eyrie&quot;, &quot;secret_marquise&quot;, &quot;secret_duchy&quot;, &quot;secret_lizard&quot;, &quot;secret_vagabond&quot;]
+list_vars = [{var: &quot;secret_eyrie&quot;, password: &quot;after the apple&quot;}, 
+{var: &quot;secret_marquise&quot;, password: &quot;fell from the tree&quot;}, 
+{var: &quot;secret_duchy&quot;, password: &quot;we planted it deep&quot;},  
+{var: &quot;secret_vagabond&quot;, password: &quot;its roots grew free&quot;},
+{var: &quot;secret_riverfolk&quot;, password: &quot;we fed it food and water&quot;},
+{var: &quot;secret_alliance&quot;, password: &quot;but only hate made it grow&quot;},
+{var: &quot;secret_lizard&quot;, password: &quot;hate is a garden in the hearts of all&quot;}]
 for(secret of list_vars) {
-  //result = engine.state.get(&#39;secret_eyrie&#39;);
-  result = &quot;123&quot;
-  console.log(secret)
-  result = result.toLowerCase()
-  result = result == &quot;after the apple&quot;
-  engine.state.set(&quot;secret_eyrie_correct&quot;, result)
+  result = engine.state.get(secret.var);
+  if(result){
+	console.log(secret)
+	console.log(result)
+	result = result.toLowerCase()
+	result = result == secret.password
+	console.log(result)
+	engine.state.set(secret.var+&quot;_correct&quot;, result)
+ }
 }
 [cont&#39;d]
 
 
 {no ambient sound}
+{embed passage: &quot;Rune_Button&quot;}
+{embed passage: &quot;Eyrie Secret&quot;}
+{embed passage: &quot;Marquise Secret&quot;}
+{embed passage: &quot;Duchy Secret&quot;}
+{embed passage: &quot;Vagabond Secret&quot;}
+{embed passage: &quot;Riverfolk Secret&quot;}
+{embed passage: &quot;Alliance Secret&quot;}
+{embed passage: &quot;Lizard Secret&quot;}
+
+
+[cont&#39;d]
+
+
+
+</tw-passagedata><tw-passagedata pid="14" name="The Marquise" tags="" position="721,388" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
+*Marquis Antonio Montoya De Cat, Marquis of the Woodland District of the Feline Empire 326 W.E*
+
+The Empire wants the Woodland to transform to a new beacon of industry and success. The Feline Empire grants education, medical care, civilization. These savages are all against you and your people. Those loyal to the paw are rewarded, and those who do not understand its benefits will be crushed.
+
+Now, some do not feel that the Empire is the true ruler of the forest. They cling to old beliefs and stories, whispers of magic and ancestry. Industry and science is the future. Bureaucracy and civilization will win.
+
+You may be second now, נפל מהעץ
+
+If you gather those loyal to you, make them see the benefits.
+
+Everyone will be happy living under [[Marquise History&lt;-the Empire]]. Progress needs sacrifice.
+
+{back link}</tw-passagedata><tw-passagedata pid="15" name="initial_variable" tags="" position="132,31" size="100,100">secret_eyrie_correct: false
+secret_eyrie: &quot;&quot;
+
+secret_marquise_correct: false
+secret_marquise: &quot;&quot;
+
+secret_duchy_correct: false
+secret_duchy: &quot;&quot;
+
+secret_vagabond_correct: false
+secret_vagabond: &quot;&quot;
+
+secret_riverfolk_correct: false
+secret_fiverfolk: &quot;&quot;
+
+secret_alliance_correct: false
+secret_alliance: &quot;&quot;
+
+secret_lizard_correct: false
+secret_lizard: &quot;&quot;
+
+--</tw-passagedata><tw-passagedata pid="16" name="Test" tags="" position="569,662" size="100,100">&lt;style&gt;
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Animated Buttons - &quot;Pressed Effect&quot;&lt;/h2&gt;
+
+
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Eyrie&quot;&gt;
+&lt;button class=&quot;button&quot;&gt;Click Me&lt;/button&gt;
+&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="17" name="Rune_Button" tags="" position="568,84" size="100,100">future_text: &quot;Know what you feel.&quot;
+--
+&lt;style&gt;
+.button {
+  padding: 25px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #F3E997;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #D5CC84}
+
+.button:active {
+  background-color: #79744C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+&lt;/style&gt;
+
+{embed passage: &quot;Rune_Button_JS&quot;}
+
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;???&quot;&gt;
+&lt;button class=&quot;button&quot;&gt;&lt;img src=&quot;img/apple_snake.png&quot;&gt;
+&lt;/button&gt;
+&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="18" name="ThreeJS" tags="" position="81,929" size="100,100">:: StoryTitle
+Chapbook: Importing External JS
+
+:: UserScript[script]
+// The following code is used from MDN for
+// dynamically importing scripts
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#Dynamically_importing_scripts
+[JavaScript]
+window.setup = {};
+
+setup.loadError = function(oError) {
+  throw new URIError(&quot;The script &quot; + oError.target.src + &quot; didn&#39;t load correctly.&quot;);
+};
+
+setup.loadScript = function(url, onloadFunction) {
+  var newScript = document.createElement(&quot;script&quot;);
+  newScript.onerror = setup.loadError;
+  if (onloadFunction) { newScript.onload = onloadFunction; }
+  document.head.appendChild(newScript);
+	newScript.async = true;
+  newScript.src = url;
+};
+[cont&#39;d]
+
+:: Start
+&lt;div id=&quot;drawArea&quot;&gt;&lt;/div&gt;
+[JavaScript]
+setup.loadScript(&quot;https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js&quot;, function() {
+	var scene = new THREE.Scene();
+	var camera = new THREE.PerspectiveCamera( 
+		75, 
+		1,
+		0.1,
+		1000 );
+
+	var renderer = new THREE.WebGLRenderer();
+	renderer.setSize( 250, 250 );
+	document.getElementById(&quot;drawArea&quot;).appendChild( renderer.domElement );
+
+	var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+	var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+	var cube = new THREE.Mesh( geometry, material );
+	scene.add( cube );
+
+	camera.position.z = 5;
+
+	var animate = function () {
+		requestAnimationFrame( animate );
+
+		cube.rotation.x += 0.01;
+		cube.rotation.y += 0.01;
+
+		renderer.render( scene, camera );
+	};
+
+	animate();
+	
+});
+
+[continued]</tw-passagedata><tw-passagedata pid="19" name="TestFlipbook" tags="" position="406,1188" size="100,100">Turn JS Test
+
+[CSS]
+body{
+    overflow:hidden;
+}
+
+#flipbook{
+    width:400px;
+    height:300px;
+}
+
+#flipbook .page{
+    width:400px;
+    height:300px;
+    background-color:white !important;
+    line-height:300px;
+    font-size:20px !important;
+    text-align:center;
+}
+
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective:2000px;
+    -ms-perspective:2000px;
+    -o-perspective:2000px;
+    perspective:2000px;
+}
+
+#flipbook .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+[cont&#39;d]
+
+
+&lt;div id=&quot;flipbook&quot;&gt;
+    &lt;div class=&quot;hard&quot;&gt;{embed passage: &#39;A Story of Root&#39;} &lt;/div&gt; 
+    &lt;div class=&quot;hard&quot;&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/8/84/Parchment.00.jpg&quot; style=&quot;height: 100%; width: 100%&quot;/&gt; &lt;/div&gt;
+    &lt;div&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/8/84/Parchment.00.jpg&quot; style=&quot;height: 100%; width: 100%&quot;/&gt; &lt;/div&gt;
+    &lt;div&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/8/84/Parchment.00.jpg&quot; style=&quot;height: 100%; width: 100%&quot;/&gt; &lt;/div&gt;
+    &lt;div class=&quot;hard&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;hard&quot;&gt;&lt;/div&gt;
+
+[JavaScript]
+setup.loadScript(&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;, function(){
+ setup.loadScript(&quot;https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.js&quot;, function(){
+	  $(&quot;#flipbook&quot;).turn({
+		  width: $(&quot;#page&quot;).width(),
+		  height: $(&quot;#page&quot;).width()*3/4,
+		  autoCenter: true
+	  });
+	});
+});
+
+[cont&#39;d]
+</tw-passagedata><tw-passagedata pid="20" name="???_Eyrie" tags="" position="168,676" size="100,100">[[אחריהתפוח-&gt;???]] 
+
+</tw-passagedata><tw-passagedata pid="21" name="Eyrie Secret" tags="" position="615,251" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;Shogun Fuji Sora&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-eyrie.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
 [if birdFinish === true]
 [align center]
-&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-eyrie.png&quot; style=&quot;width: 10%;&quot;&gt; \
 אחריהתפוח
+[cont&#39;d]
 [if secret_eyrie_correct === false]
 [align center]
 {text input for: &#39;secret_eyrie&#39;, required: false}
 [else]
 [align center]
-*After the apple*
+*After the apple*</tw-passagedata><tw-passagedata pid="22" name="Marquise Secret" tags="" position="717,248.0954451560974" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Marquise&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-marquise.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
+[if marquiseFinish === true]
+[align center]
+נפל מהעץ 
+[if secret_marquise_correct === false]
+[align center]
+{text input for: &#39;secret_marquise&#39;, required: false}
+[else]
+[align center]
+*Fell from the tree*</tw-passagedata><tw-passagedata pid="23" name="The Duchy" tags="" position="836,384.0954451560974" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
 [cont&#39;d]
-[[Test -&gt;$(response)]]
-{back link, label: response}
-</tw-passagedata><tw-passagedata pid="14" name="The Marquise" tags="" position="335,625" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="eyrie_variable" tags="" position="425,220" size="100,100">secret_eyrie_correct: false
-secret_eyrie: &quot;&quot;
+*Princess Molealisa, Grand Duchess of Discover, the Underground Duchy. 326 W.E*
+
+The Underground Duchy has been left alone for a very long time. Not since the Eyrie Civil War caused diplomatic relations to break and for their forces to focus on their work underground. Now, all the Princes are united together. The Council has finally agreed with Princess Molealisa’s pleas to finally start tunnelling upwards. The Mole Record stated that the Up World is a treacherous place. 
+
+The Up World is strange, without diplomacy and dinner etiquette, they do not even eat with worm forks! 
+
+However, the men loyal to the Princesse’s vision of a bright world… a world where their eyes can once more readjust to the sun. To see and to explore! The thrill, the joy of discovery! True, some whisper that resources are dwindling underground, that your people have no choice but to go to the world above…
+
+The Underground Duchy may have once been a third rate country…
+שתלנו אותו עמוק
+But we have grown Underground, like a tree taking root.
+
+It is time to sprout, time for discovery. For the Princess. We will show her the new world.
+
+We will show the world the [[Duchy History]] glory of the Duchy. 
+</tw-passagedata><tw-passagedata pid="24" name="Riverfolk Secret" tags="" position="1074,252.0954451560974" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Riverfolk&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-riverfolk.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
+[if riverfolkFinish === true]
+[align center]
+האכלנו אותו אוכל ומים 
+[if secret_riverfolk_correct === false]
+[align center]
+{text input for: &#39;secret_riverfolk&#39;, required: false}
+[else]
+[align center]
+*After the apple*</tw-passagedata><tw-passagedata pid="25" name="Rune_Button_JS" tags="" position="682,80.09544515609741" size="100,100">[JavaScript]
+console.log(&quot;Ayooo rune&quot;)
+
+
+[cont&#39;d]</tw-passagedata><tw-passagedata pid="26" name="The Riverfolk" tags="" position="1068,376" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
+*Merchant Prince Otto, 326 W.E*
+
+The Board Meeting was over, you have your suspicions about how lucrative this venture will be. There is too much unknown about The Woodland, the Feline Empire and the new Marquis De Cat are trying to build roads and infrastructure however it is a wild place. This venture may be extremely lucrative, or cost the Company everything.
+
+They should stick to the same trading routes with better naval support, those tiny rivers cannot carry a proper merchant vessel! However, you have no choice in the matter anymore.
+
+You will represent The Company in the Woodland. Always be closing, Always be smiling.
+
+Even if you may know some people in the Eyrie or the Empire, everyone is your friend.
+
+{reveal link: &quot;Sell, Sell, Sell.&quot;, passage: &quot;???_Riverfolk&quot;}
+
+You came out fifth in the Company Rankings… 
+
+The Riverfolk Company has branches everywhere though, and it is time to fully expand, the meeting was final. There is too much turmoil in the Woodland, the Eyrie is moving to retake their ancestral homeland and war needs money. War is money. You are talented enough, and expendable enough, to represent the Company in the Woodland. Logistics is very important; the Woodland is a little isolated.
+
+However, what is more important is your signature smile.
+
+Make them want what you have. You can do this.
+</tw-passagedata><tw-passagedata pid="27" name="Duchy Secret" tags="" position="829.3817806243896,251" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Duchy&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-duchy.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
+[if duchyFinish === true]
+[align center]
+שתלנו אותו עמוק  
+[if secret_duchy_correct === false]
+[align center]
+{text input for: &#39;secret_duchy&#39;, required: false}
+[else]
+[align center]
+*We planted it deep*</tw-passagedata><tw-passagedata pid="28" name="The Vagabond" tags="" position="953.3817806243896,385.0954451560974" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
+*The Guild of Vagabonds. 326 W.E*
+
+The Woodland is a beautiful place. So much of it is left unexplored, the simple people loved the clearings. It was safe there and for hundreds of years villages of mice, foxes, rabbits and all sorts of creatures flourished in the spaces between the trees. However, there are some who brave the dangers of the dark.
+
+The Vagabonds. First, we were a people that called no clearing a home. Most of us are orphans and travellers. We put down no roots, The Woodland was a place where you were judged by your roots. Everyone knew your name, which clearing you were from, who your friends are. 
+
+The only thing we have in common is that we do not belong.
+
+In the last fifty years we have made a guild, a guild for what they already call us, a Vagabond Guild. We teach each other how to make tea, which forests have the best things to hunt and gather, make money by helping those who need it… or taking from those who don’t pay attention.
+
+We try to follow a few rules, sleep in the woods, honour the tasks a clearing gives you, if you steal remember to give aid later on. Always drink Root Tea.
+We have a Vagabond Code. Now, the Marquis De Cat and the Feline Empire rule the Woodland.
+
+The Marquis De Cat has been taking charge these last four years… 
+
+It’s not so bad, at least they build roads and give people jobs. {reveal link: &quot;More money, more quests.&quot;, passage: &quot;???_Vagabond&quot;}
+
+However, the quests people are giving you are changing, there is violence in the air.
+
+Maybe it is best to stay in the forest and help those who need it.
+
+Or will you get that crossbow you stashed away, and join in? 
+</tw-passagedata><tw-passagedata pid="29" name="Vagabond Secret" tags="" position="951.3817806243896,251.0954451560974" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Vagabond&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-vagabond.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
+[if vagabondFinish === true]
+[align center]
+שורשיו צמחו חופשיים  
+[if secret_vagabond_correct === false]
+[align center]
+{text input for: &#39;secret_vagabond&#39;, required: false}
+[else]
+[align center]
+*Its roots grew free*</tw-passagedata><tw-passagedata pid="30" name="Alliance Secret" tags="" position="1196.3817806243896,252.0954451560974" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Alliance&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-woodland.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
+[if allianceFinish === true]
+[align center]
+אבל רק שנאה גרמה לו לצמוח 
+[if secret_alliance_correct === false]
+[align center]
+{text input for: &#39;secret_alliance&#39;, required: false}
+[else]
+[align center]
+*After the apple*</tw-passagedata><tw-passagedata pid="31" name="Lizard Secret" tags="" position="1306.3817806243896,251.0954451560974" size="100,100">[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Lizard&quot;&gt;
+&lt;img src=&quot;https://root.seiyria.com/assets/inicon/faction-cult.png&quot; style=&quot;width: 10%;&quot;&gt; &lt;/a&gt;
+[if lizardFinish === true]
+[align center]
+שנאה היא גן בליבם של כולם 
+[if secret_lizard_correct === false]
+[align center]
+{text input for: &#39;secret_lizard&#39;, required: false}
+[else]
+[align center]
+*After the apple*</tw-passagedata><tw-passagedata pid="32" name="The Lizard" tags="" position="1321.3817806243896,371.0954451560974" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
+*Cardinal Nachasch, Lizard Religion, 326 W.E*
+
+‘The Lizard Cult’ is a negative term for a group of people just trying to bring some good to the world.
+
+The Woodland is a dark place, filled with secrets and hate.
+
+We were established on the final {reveal link: &quot;sixth day of the reawakening.&quot;, passage: &quot;???_Lizard&quot;}
+
+They call us the ‘Lizard Cult’ because many of us are reptilian in nature, but we do not belong to one species, race or location. We are an idea; we are hope that life can be better than what it is.
+
+Have people been mean to you? Have you been neglected?
+
+The Great Powers and countries fight and use you, they do not care.
+
+The Woodland Alliance only want to use your anger, they do not care.
+
+We want you to feel better. To recognize the people who hurt you.
+
+Grow a garden of peace in your heart.
+
+Take all the negative things they did to you, and leave it in the garden.
+
+Let the great Serpent feed on your hate and despair, let is all out.
+
+You will be free, you will help others be free, to let go of their anger.
+
+Take it all and plant is in the Garden. Gather all those who feel like you.
+
+Plant your hatred deep underground, let it root, let it blossom.
+
+Only when the soil is tilled and disturbed, do things grow.
+</tw-passagedata><tw-passagedata pid="33" name="The Alliance" tags="" position="1197.3817806243896,370.0954451560974" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
+*The Woodland Alliance, 326 W.E*
+
+Terrorists they call us.
+Everyone seems to hate us. They say we cause trouble and should keep our mouths shut.
+
+For too long, our people hid in the clearings while those stronger than us played with our lives like a game of chess. Influencing us, taking over our villages. Is it because they think us weak?
+
+What are we… just foxes, mice and rabbits; they play with us like pawns.
+We found a Feline Empire map, the Marquis has our villages labelled by the majority in each village.
+
+Call them ‘Fox Clearing’ or ‘Rabbit Clearing’ we are not pawns. We are people, We are diverse.
+
+The Alliance has everyone, everyone who ever shook an angry first in a tavern.
+Every mother, man or child who shook her fist at taxes, at invaders, at dumb laws.
+
+We are the Woodland, we live here. What happens to it is our decision.
+How about one last drink? {reveal link: &quot;I know we already have five… &quot;, passage: &quot;???_Alliance&quot;}
+
+But I’m angry… you know why I drink so much? Take this coin with a fist, keep it safe.
+
+Imagine you go to work, leave your family at home, then a bunch of cat and bird soldiers rush in.
+
+Your home gets caught in the middle of their fighting; it catches fire. Your family are inside.
+
+Too dark? The Woodland is Dark. Deal with it. They just moved on.
+Whatever they tell you, we’re not a ‘group’ or ‘organization’ or ‘rebellion’. We’re the anger of the people.
+
+Let’s blow them all up. For the Alliance. Hand me the explosives.
+</tw-passagedata><tw-passagedata pid="34" name="Marquise History" tags="" position="721.3817806243896,544.0954451560974" size="100,100">marquiseFinish: true
 --
-testestest</tw-passagedata><tw-passagedata pid="16" name="response" tags="" position="464,545" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="$(response)" tags="" position="584,545" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata><script>!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=28)}([function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.get=t.set=t.defaults=void 0;var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};t.init=function(){var e=(0,u.ifid)(),t=(0,u.name)();if(void 0===t)throw new Error("Cannot set up state: the story has no name");d="chapbook-state-"+t+"-"+e},t.reset=v,t.sameObject=function(e,t){for(var n=e.split("."),r=t.split("."),o=0;o<n.length&&o<r.length;o++)if(n[o]!==r[o])return!1;return!0},t.setDefault=function(e,t){var n=y(e);f('Defaulting "'+e+'" to '+JSON.stringify(t)),(0,i.default)(h,e,t),m(window,e),null==n&&a.default.emit("state-change",{name:e,value:t,previous:n})},t.setLookup=function(e,t){var n=y(e);f("Adding lookup variable "+e),(0,i.default)(g,e,t),function(e,t){if(!e[t]){for(var n=t.split("."),r=n[n.length-1],o=0;o<n.length-1;o++)e[n[o]]=e[n[o]]||{},e=e[n[o]];Object.defineProperty(e,r,{get:function(){return y(t)},set:function(){throw new Error("Chapbook lookup variables may only be read.")},configurable:!0})}}(window,e),null==n&&a.default.emit("state-change",{name:e,value:y(e),previous:n})},t.saveToObject=w,t.restoreFromObject=_,t.canSaveToStorage=x,t.saveToStorage=k,t.canRestoreFromStorage=function(){return x()&&null!==window.localStorage.getItem(d)},t.restoreFromStorage=function(){f("Restoring variables from local storage"),_(JSON.parse(window.localStorage.getItem(d))),f("Restore complete")},t.purgeFromStorage=function(e){e||f("Purging variables from local storage");_(JSON.parse(window.localStorage.getItem(d))),e||f("Purge complete")},t.varNames=function(e){function t(e,n){var o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];return Object.keys(e).reduce(function(o,i){if("object"===r(e[i])&&e[i]&&!Array.isArray(e[i]))t(e[i],n?n+"."+i:i,o);else{var s=n?n+"."+i:i;-1===o.indexOf(s)&&o.push(s)}return o},o)}if(e)return t(h,null,t(p,null)).sort();return t(p).sort()};var o=c(n(34)),i=c(n(35)),s=c(n(37)),a=c(n(1)),l=c(n(4)),u=n(6);function c(e){return e&&e.__esModule?e:{default:e}}var f=(0,l.default)("state").log,d=void 0,p={},h={},g={};function m(e,t){if(!e[t]){Object.defineProperty(e,t,{get:function(){return y(t)},set:function(e){b(t,e)},configurable:!0});var n=t.split(".");n.length>1&&(n.pop(),m(e,n.join(".")))}}function v(){!function e(t,n){Object.keys(t).forEach(function(o){var i,l,u=""===n?o:n+"."+o;if("object"!==r(t[o])||Array.isArray(t[o])){var c=t[o];delete t[o],i=window,l=n,(0,s.default)(i,l),a.default.emit("state-change",{name:u,value:y(u),previous:c})}else e(t[o],u)})}(p,""),a.default.emit("state-reset"),y("config.state.autosave")&&k()}function b(e,t){var n=y(e);(0,i.default)(p,e,t),m(window,e),t!==n&&a.default.emit("state-change",{name:e,previous:n,value:t}),y("config.state.autosave")&&k()}function y(e){var t=(0,o.default)(g,e);if("function"==typeof t)return t(y,b);var n=(0,o.default)(p,e);return null==n?(0,o.default)(h,e):n}function w(){return Object.assign({},p)}function _(e){v(),Object.keys(e).forEach(function(t){return b(t,e[t])})}function x(){try{return window.localStorage.setItem("chapbook-test","a"),window.localStorage.removeItem("chapbook-test"),!0}catch(e){return!1}}function k(){f("Saving to local storage: "+JSON.stringify(w())),window.localStorage.setItem(d,JSON.stringify(w())),f("Save complete")}t.defaults={"config.state.autosave":!0},t.set=b,t.get=y},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r,o=n(30),i=(r=o)&&r.__esModule?r:{default:r};t.default=(0,i.default)()},function(e,t,n){"use strict";n.r(t),n.d(t,"h",function(){return a}),n.d(t,"createElement",function(){return a}),n.d(t,"cloneElement",function(){return f}),n.d(t,"createRef",function(){return q}),n.d(t,"Component",function(){return D}),n.d(t,"render",function(){return R}),n.d(t,"rerender",function(){return g}),n.d(t,"options",function(){return o});var r=function(){},o={},i=[],s=[];function a(e,t){var n,a,l,u,c=s;for(u=arguments.length;u-- >2;)i.push(arguments[u]);for(t&&null!=t.children&&(i.length||i.push(t.children),delete t.children);i.length;)if((a=i.pop())&&void 0!==a.pop)for(u=a.length;u--;)i.push(a[u]);else"boolean"==typeof a&&(a=null),(l="function"!=typeof e)&&(null==a?a="":"number"==typeof a?a=String(a):"string"!=typeof a&&(l=!1)),l&&n?c[c.length-1]+=a:c===s?c=[a]:c.push(a),n=l;var f=new r;return f.nodeName=e,f.children=c,f.attributes=null==t?void 0:t,f.key=null==t?void 0:t.key,void 0!==o.vnode&&o.vnode(f),f}function l(e,t){for(var n in t)e[n]=t[n];return e}function u(e,t){null!=e&&("function"==typeof e?e(t):e.current=t)}var c="function"==typeof Promise?Promise.resolve().then.bind(Promise.resolve()):setTimeout;function f(e,t){return a(e.nodeName,l(l({},e.attributes),t),arguments.length>2?[].slice.call(arguments,2):e.children)}var d=/acit|ex(?:s|g|n|p|$)|rph|ows|mnc|ntw|ine[ch]|zoo|^ord/i,p=[];function h(e){!e._dirty&&(e._dirty=!0)&&1==p.push(e)&&(o.debounceRendering||c)(g)}function g(){for(var e;e=p.pop();)e._dirty&&$(e)}function m(e,t){return e.normalizedNodeName===t||e.nodeName.toLowerCase()===t.toLowerCase()}function v(e){var t=l({},e.attributes);t.children=e.children;var n=e.nodeName.defaultProps;if(void 0!==n)for(var r in n)void 0===t[r]&&(t[r]=n[r]);return t}function b(e){var t=e.parentNode;t&&t.removeChild(e)}function y(e,t,n,r,o){if("className"===t&&(t="class"),"key"===t);else if("ref"===t)u(n,null),u(r,e);else if("class"!==t||o)if("style"===t){if(r&&"string"!=typeof r&&"string"!=typeof n||(e.style.cssText=r||""),r&&"object"==typeof r){if("string"!=typeof n)for(var i in n)i in r||(e.style[i]="");for(var i in r)e.style[i]="number"==typeof r[i]&&!1===d.test(i)?r[i]+"px":r[i]}}else if("dangerouslySetInnerHTML"===t)r&&(e.innerHTML=r.__html||"");else if("o"==t[0]&&"n"==t[1]){var s=t!==(t=t.replace(/Capture$/,""));t=t.toLowerCase().substring(2),r?n||e.addEventListener(t,w,s):e.removeEventListener(t,w,s),(e._listeners||(e._listeners={}))[t]=r}else if("list"!==t&&"type"!==t&&!o&&t in e){try{e[t]=null==r?"":r}catch(e){}null!=r&&!1!==r||"spellcheck"==t||e.removeAttribute(t)}else{var a=o&&t!==(t=t.replace(/^xlink:?/,""));null==r||!1===r?a?e.removeAttributeNS("http://www.w3.org/1999/xlink",t.toLowerCase()):e.removeAttribute(t):"function"!=typeof r&&(a?e.setAttributeNS("http://www.w3.org/1999/xlink",t.toLowerCase(),r):e.setAttribute(t,r))}else e.className=r||""}function w(e){return this._listeners[e.type](o.event&&o.event(e)||e)}var _=[],x=0,k=!1,S=!1;function j(){for(var e;e=_.shift();)o.afterMount&&o.afterMount(e),e.componentDidMount&&e.componentDidMount()}function O(e,t,n,r,o,i){x++||(k=null!=o&&void 0!==o.ownerSVGElement,S=null!=e&&!("__preactattr_"in e));var s=C(e,t,n,r,i);return o&&s.parentNode!==o&&o.appendChild(s),--x||(S=!1,i||j()),s}function C(e,t,n,r,o){var i=e,s=k;if(null!=t&&"boolean"!=typeof t||(t=""),"string"==typeof t||"number"==typeof t)return e&&void 0!==e.splitText&&e.parentNode&&(!e._component||o)?e.nodeValue!=t&&(e.nodeValue=t):(i=document.createTextNode(t),e&&(e.parentNode&&e.parentNode.replaceChild(i,e),M(e,!0))),i.__preactattr_=!0,i;var a,l,u=t.nodeName;if("function"==typeof u)return function(e,t,n,r){var o=e&&e._component,i=o,s=e,a=o&&e._componentConstructor===t.nodeName,l=a,u=v(t);for(;o&&!l&&(o=o._parentComponent);)l=o.constructor===t.nodeName;o&&l&&(!r||o._component)?(N(o,u,3,n,r),e=o.base):(i&&!a&&(T(i),e=s=null),o=L(t.nodeName,u,n),e&&!o.nextBase&&(o.nextBase=e,s=null),N(o,u,1,n,r),e=o.base,s&&e!==s&&(s._component=null,M(s,!1)));return e}(e,t,n,r);if(k="svg"===u||"foreignObject"!==u&&k,u=String(u),(!e||!m(e,u))&&(a=u,(l=k?document.createElementNS("http://www.w3.org/2000/svg",a):document.createElement(a)).normalizedNodeName=a,i=l,e)){for(;e.firstChild;)i.appendChild(e.firstChild);e.parentNode&&e.parentNode.replaceChild(i,e),M(e,!0)}var c=i.firstChild,f=i.__preactattr_,d=t.children;if(null==f){f=i.__preactattr_={};for(var p=i.attributes,h=p.length;h--;)f[p[h].name]=p[h].value}return!S&&d&&1===d.length&&"string"==typeof d[0]&&null!=c&&void 0!==c.splitText&&null==c.nextSibling?c.nodeValue!=d[0]&&(c.nodeValue=d[0]):(d&&d.length||null!=c)&&function(e,t,n,r,o){var i,s,a,l,u,c=e.childNodes,f=[],d={},p=0,h=0,g=c.length,v=0,y=t?t.length:0;if(0!==g)for(var w=0;w<g;w++){var _=c[w],x=_.__preactattr_,k=y&&x?_._component?_._component.__key:x.key:null;null!=k?(p++,d[k]=_):(x||(void 0!==_.splitText?!o||_.nodeValue.trim():o))&&(f[v++]=_)}if(0!==y)for(var w=0;w<y;w++){l=t[w],u=null;var k=l.key;if(null!=k)p&&void 0!==d[k]&&(u=d[k],d[k]=void 0,p--);else if(h<v)for(i=h;i<v;i++)if(void 0!==f[i]&&(S=s=f[i],O=o,"string"==typeof(j=l)||"number"==typeof j?void 0!==S.splitText:"string"==typeof j.nodeName?!S._componentConstructor&&m(S,j.nodeName):O||S._componentConstructor===j.nodeName)){u=s,f[i]=void 0,i===v-1&&v--,i===h&&h++;break}u=C(u,l,n,r),a=c[w],u&&u!==e&&u!==a&&(null==a?e.appendChild(u):u===a.nextSibling?b(a):e.insertBefore(u,a))}var S,j,O;if(p)for(var w in d)void 0!==d[w]&&M(d[w],!1);for(;h<=v;)void 0!==(u=f[v--])&&M(u,!1)}(i,d,n,r,S||null!=f.dangerouslySetInnerHTML),function(e,t,n){var r;for(r in n)t&&null!=t[r]||null==n[r]||y(e,r,n[r],n[r]=void 0,k);for(r in t)"children"===r||"innerHTML"===r||r in n&&t[r]===("value"===r||"checked"===r?e[r]:n[r])||y(e,r,n[r],n[r]=t[r],k)}(i,t.attributes,f),k=s,i}function M(e,t){var n=e._component;n?T(n):(null!=e.__preactattr_&&u(e.__preactattr_.ref,null),!1!==t&&null!=e.__preactattr_||b(e),E(e))}function E(e){for(e=e.lastChild;e;){var t=e.previousSibling;M(e,!0),e=t}}var A=[];function L(e,t,n){var r,o=A.length;for(e.prototype&&e.prototype.render?(r=new e(t,n),D.call(r,t,n)):((r=new D(t,n)).constructor=e,r.render=P);o--;)if(A[o].constructor===e)return r.nextBase=A[o].nextBase,A.splice(o,1),r;return r}function P(e,t,n){return this.constructor(e,n)}function N(e,t,n,r,i){e._disable||(e._disable=!0,e.__ref=t.ref,e.__key=t.key,delete t.ref,delete t.key,void 0===e.constructor.getDerivedStateFromProps&&(!e.base||i?e.componentWillMount&&e.componentWillMount():e.componentWillReceiveProps&&e.componentWillReceiveProps(t,r)),r&&r!==e.context&&(e.prevContext||(e.prevContext=e.context),e.context=r),e.prevProps||(e.prevProps=e.props),e.props=t,e._disable=!1,0!==n&&(1!==n&&!1===o.syncComponentUpdates&&e.base?h(e):$(e,1,i)),u(e.__ref,e))}function $(e,t,n,r){if(!e._disable){var i,s,a,u=e.props,c=e.state,f=e.context,d=e.prevProps||u,p=e.prevState||c,h=e.prevContext||f,g=e.base,m=e.nextBase,b=g||m,y=e._component,w=!1,k=h;if(e.constructor.getDerivedStateFromProps&&(c=l(l({},c),e.constructor.getDerivedStateFromProps(u,c)),e.state=c),g&&(e.props=d,e.state=p,e.context=h,2!==t&&e.shouldComponentUpdate&&!1===e.shouldComponentUpdate(u,c,f)?w=!0:e.componentWillUpdate&&e.componentWillUpdate(u,c,f),e.props=u,e.state=c,e.context=f),e.prevProps=e.prevState=e.prevContext=e.nextBase=null,e._dirty=!1,!w){i=e.render(u,c,f),e.getChildContext&&(f=l(l({},f),e.getChildContext())),g&&e.getSnapshotBeforeUpdate&&(k=e.getSnapshotBeforeUpdate(d,p));var S,C,E=i&&i.nodeName;if("function"==typeof E){var A=v(i);(s=y)&&s.constructor===E&&A.key==s.__key?N(s,A,1,f,!1):(S=s,e._component=s=L(E,A,f),s.nextBase=s.nextBase||m,s._parentComponent=e,N(s,A,0,f,!1),$(s,1,n,!0)),C=s.base}else a=b,(S=y)&&(a=e._component=null),(b||1===t)&&(a&&(a._component=null),C=O(a,i,f,n||!g,b&&b.parentNode,!0));if(b&&C!==b&&s!==y){var P=b.parentNode;P&&C!==P&&(P.replaceChild(C,b),S||(b._component=null,M(b,!1)))}if(S&&T(S),e.base=C,C&&!r){for(var D=e,R=e;R=R._parentComponent;)(D=R).base=C;C._component=D,C._componentConstructor=D.constructor}}for(!g||n?_.push(e):w||(e.componentDidUpdate&&e.componentDidUpdate(d,p,k),o.afterUpdate&&o.afterUpdate(e));e._renderCallbacks.length;)e._renderCallbacks.pop().call(e);x||r||j()}}function T(e){o.beforeUnmount&&o.beforeUnmount(e);var t=e.base;e._disable=!0,e.componentWillUnmount&&e.componentWillUnmount(),e.base=null;var n=e._component;n?T(n):t&&(null!=t.__preactattr_&&u(t.__preactattr_.ref,null),e.nextBase=t,b(t),A.push(e),E(t)),u(e.__ref,null)}function D(e,t){this._dirty=!0,this.context=t,this.props=e,this.state=this.state||{},this._renderCallbacks=[]}function R(e,t,n){return O(n,e,{},!1,t,!1)}function q(){return{}}l(D.prototype,{setState:function(e,t){this.prevState||(this.prevState=this.state),this.state=l(l({},this.state),"function"==typeof e?e(this.state,this.props):e),t&&this._renderCallbacks.push(t),h(this)},forceUpdate:function(e){e&&this._renderCallbacks.push(e),$(this,2)},render:function(){}});var z={h:a,createElement:a,cloneElement:f,createRef:q,Component:D,render:R,rerender:g,options:o};t.default=z},function(e,t){e.exports=function(){throw new Error("define cannot be used indirect")}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.warn=t.log=t.defaults=void 0,t.default=function(e){return{log:function(t){l(e,t)},warn:function(t){u(e,t)}}};var r,o=n(1),i=(r=o)&&r.__esModule?r:{default:r},s=n(0);t.defaults={"config.logger.show.parse":!1,"config.logger.show.render":!1,"config.logger.show.sound":!1,"config.logger.show.state":!1,"config.logger.show.story":!1,"config.logger.show.style":!1};function a(e){return e+": "}function l(e,t){(0,s.get)("config.logger.show."+e)&&console.log(a(e)+t),i.default.emit("log",{source:e,message:t})}function u(e,t){console.warn(a(e)+t),i.default.emit("log-warning",{source:e,message:t})}t.log=l,t.warn=u,window.logger={log:l,warn:u}},function(e,t,n){"use strict";function r(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[],r=document.createElement(e);return Object.keys(t).forEach(function(e){void 0!==t[e]&&r.setAttribute(e,t[e])}),n.forEach(function(e){"string"==typeof e?r.appendChild(document.createTextNode(e)):r.appendChild(e)}),r}Object.defineProperty(t,"__esModule",{value:!0}),t.domify=r,t.default=function(){return r.apply(void 0,arguments).outerHTML}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.passages=void 0,t.loadFromData=function(e){["name","creator","ifid","options"].forEach(function(t){return u[t]=e.getAttribute(t)}),u.startNode=parseInt(e.getAttribute("startnode")),u.creatorVersion=e.getAttribute("creator-version");var t=function(e){return e.map(function(e){return e.textContent})};u.customScripts=t((0,s.selectAll)(e,'[type="text/twine-javascript"]')),u.customStyles=t((0,s.selectAll)(e,'[type="text/twine-css"]')),c=(0,s.selectAll)(e,"tw-passagedata").map(function(e){var t={id:parseInt(e.getAttribute("pid")),name:e.getAttribute("name"),source:e.textContent},n=e.getAttribute("tags");return t.tags=n?n.split(" "):[],t})},t.init=function(){(0,a.setDefault)("trail",[d().name]),(0,a.setDefault)("config.testing","string"==typeof u.options&&-1!==u.options.indexOf("debug")||!1),document.title=u.name},t.runCustomScripts=function(){l.log("Running custom scripts ("+u.customScripts.length+")"),u.customScripts.forEach(function(e){new Function(e).apply(window)})},t.addCustomStyles=function(){l.log("Adding custom styles ("+u.customStyles.length+")"),u.customStyles.forEach(function(e){var t=document.createElement("style");t.innerHTML=e,document.head.appendChild(t)})},t.ifid=function(){return u.ifid},t.name=function(){return u.name},t.exportedPassages=f,t.startPassage=d,t.passageNamed=function(e){return c.find(function(t){return t.name===e})},t.passageWithId=function(e){return c.find(function(t){return t.id===e})};var r,o=n(4),i=(r=o)&&r.__esModule?r:{default:r},s=n(7),a=n(0);var l=(0,i.default)("story"),u={customScripts:[],customStyles:[]},c=[];function f(){return c}function d(){return c.find(function(e){return e.id===u.startNode})}t.passages=f},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.select=function(e,t){return e.querySelector(t)},t.selectAll=function(e,t){return Array.from(e.querySelectorAll(t))}},function(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),e.webpackPolyfill=1),e}},function(e,t){(function(t){e.exports=t}).call(this,{})},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(2);n(46);t.default=class extends r.Component{constructor(e){super(e),this.state={open:void 0===this.props.initiallyOpen||this.props.initiallyOpen}}toggle(){this.setState({open:!this.state.open})}render(){return(0,r.h)("div",{class:"panel"+(this.state.open?" open":"")},(0,r.h)("h2",null,(0,r.h)("button",{onClick:()=>this.toggle()},this.props.title)),this.state.open&&(0,r.h)("div",{class:"content"},this.props.children))}}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.defaults=void 0,t.render=function(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return(0,s.default)((0,i.default)(e),(0,a.get)("config.template.inserts")||[],(0,a.get)("config.template.modifiers")||[],t)};var r=l(n(60)),o=l(n(84)),i=l(n(94)),s=l(n(96)),a=n(0);function l(e){return e&&e.__esModule?e:{default:e}}t.defaults={"config.template.inserts":r.default,"config.template.modifiers":o.default}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.defaults=void 0,t.init=function(){(0,a.init)(),(0,l.init)(),h=document.querySelector("#page article"),m=document.querySelector("#page #spinner"),g={},["header","footer"].forEach(function(e){g[e]={container:document.querySelector("#page "+e)},["left","center","right"].forEach(function(t){g[e][t]=document.querySelector("#page "+e+" ."+t)})}),o.default.on("state-change",function(e){var t=e.name;return y("trail"===t)}),["change","click"].forEach(function(e){document.body.addEventListener(e,function(e){for(var t=e.target;t;)t.dataset&&Object.keys(t.dataset).some(function(e){return/^cb[A-Z]/.test(e)})&&o.default.emit("dom-"+e.type,t),t=t.parentNode})})},t.changeBody=function(e){(0,d.selectAll)(h,"input").forEach(function(e){e.setAttribute("value",e.value)}),(0,d.selectAll)(h,"select").forEach(function(e){for(var t=0;t<e.options.length;t++)t===e.options.selectedIndex?e.options[t].setAttribute("selected",""):e.options[t].removeAttribute("selected")});var t={x:window.scrollX,y:window.scrollY},n=h.innerHTML,r=document.createElement("div");for(;h.firstChild;)r.insertBefore(h.firstChild,r.firstChild);h.innerHTML=n,e(r),window.scrollX=t.x,window.scrollY=t.y,b(h,r.innerHTML,(0,s.get)("config.body.transition.name"),(0,s.get)("config.body.transition.duration"))};var r=p(n(20)),o=p(n(1)),i=n(64),s=n(0),a=n(66),l=n(69),u=n(6),c=n(11),f=p(n(71));n(72);var d=n(7);function p(e){return e&&e.__esModule?e:{default:e}}var h=void 0,g=void 0,m=void 0,v={crossfade:i.crossfade,fadeInOut:i.fadeInOut,none:i.none};t.defaults={"config.body.transition.name":"crossfade","config.body.transition.duration":"500ms","config.header.left":"","config.header.center":"","config.header.right":"","config.header.transition.name":"none","config.header.transition.duration":"500ms","config.footer.left":"_{story.name}_","config.footer.center":"","config.footer.right":"{restart link}","config.footer.transition.name":"none","config.footer.transition.duration":"500ms"};function b(e,t,n,r){v[n]?v[n](e,t,r):v.none(e,t)}var y=(0,r.default)(function(e){if(e.some(function(e){return e[0]})){var t=(0,s.get)("trail"),n=(0,u.passageNamed)(t[t.length-1]);if(!n)throw new Error('There is no passage named "'+t[t.length-1]+'".');window.scrollTo(0,0),b(h,(0,c.render)(n.source),(0,s.get)("config.body.transition.name"),(0,s.get)("config.body.transition.duration")),(0,f.default)(h,m)}["header","footer"].forEach(function(e){g[e].container.classList.remove("has-content"),["left","center","right"].forEach(function(t){var n=(0,c.render)((0,s.get)("config."+e+"."+t));""!==n&&g[e].container.classList.add("has-content"),b(g[e][t],n,(0,s.get)("config."+e+".transition.name"),(0,s.get)("config."+e+".transition.duration"))})})})},function(e,t,n){"use strict";e.exports=function(e,t,n){n=Object.assign({},r,n||{});let o=0,s=function(e){let t={ms:.001,s:1,m:60,h:3600};return t.d=e.hoursPerDay*t.h,t.w=e.daysPerWeek*t.d,t.mth=e.daysPerYear/e.monthsPerYear*t.d,t.y=e.daysPerYear*t.d,t}(n),a=e.toLowerCase().replace(/[^.\w+-]+/g,"").match(/[-+]?[0-9.]+[a-z]+/g);null!==a&&a.forEach(e=>{let t=e.match(/[0-9.]+/g)[0],n=e.match(/[a-z]+/g)[0];o+=function(e,t,n){return e*n[i(t)]}(t,n,s)});if(t)return function(e,t,n){return e/n[i(t)]}(o,t,s);return o};const r={hoursPerDay:24,daysPerWeek:7,weeksPerMonth:4,monthsPerYear:12,daysPerYear:365.25},o={ms:["ms","milli","millisecond","milliseconds"],s:["s","sec","secs","second","seconds"],m:["m","min","mins","minute","minutes"],h:["h","hr","hrs","hour","hours"],d:["d","day","days"],w:["w","week","weeks"],mth:["mon","mth","mths","month","months"],y:["y","yr","yrs","year","years"]};function i(e){for(let t of Object.keys(o))if(o[t].indexOf(e)>-1)return t;throw new Error(`The unit [${e}] is not supported by timestring`)}},function(e,t){function n(e,t){if(!e)throw new Error(t||"AssertionError")}n.notEqual=function(e,t,r){n(e!=t,r)},n.notOk=function(e,t){n(!e,t)},n.equal=function(e,t,r){n(e==t,r)},n.ok=n,e.exports=n},function(e,t,n){"use strict";
+The De Cats were a well-established noble lineage. ‘Rise, Marquis’ The court clapped as the Feline Empress crowed De Cat. The Woodland was taken over by the Feline Empire after the Eyrie Civil War. 
+
+It was large, uncontrolled and sparsely defended. It was the Marquis job to move there are put things in feline order. They didn’t even have an established currency, and used barter to move commerce between clearings.
+
+He started by building a Keep, to control in luxury and style. Now, the woodland residents knew where he was and he could get reports. Small things first, building better roads, securing supply chains, rewarding the loyal and crushing the dissident. He then minted the DuCat, or ducat, gold currency.
+
+Already, some grumbled about the Feline Empire’s way of rule. However, the Woodland is transforming beautifully. From small settlements unprotected and poorly built to organized roads, factories, large shops. To think they didn’t even have fur trimmers and silk worm tailors. It is time for civilization and for the Feline Empire to show these creatures how to live properly.
+
+The Marquis De Cat knew his family and his Empire wasn’t liked by all. Although, they didn’t even have hospitals and running water in some clearings. What do these savages do when one of their own gets sick? Munch on carrots and pray to their Lizard Gods. No, the Feline Empire maybe did rule with a heavy paw, but it is to shape the world around them. In the way of industry, science and the future.
+
+The Woodland will become a glorious civilization, of fine buildings and roads in the middle of such an idyllic and beautiful forest. It was the duty of the refined feline to guide their fellow creatures.
+
+To a brighter future, all will be happy in the Empire, and no one will die from a tummy ache because they ate the wrong mushroom. People will have jobs, factories, stores and beautifully trimmed clean fur.
+
+Why then, do they want to take it all away? Do they not see that all you are trying to do is help?
+
+While you work on making roads and infrastructure, they plot. 
+
+While you make sure their children don’t die from dysentery, the birds fly in.
+They hiss and pray, scheme and lie, burrow and hide, sell and lie. You see it all from your keep.
+
+They are all out to destroy everything you have worked hard to build.
+Bring your men and those loyal to you together. Protect the Empire.
+Fight for the future, for civilization, for cleanliness. 
+
+Stomp out the unclean. Build, do it smart. You are in control.
+
+Marquis De Cat puts on his coat, calls those loyal to him. You benefited from the roads and infrastructure you and your Empire have built for them, and open the balcony doors to address his loyal servants. 
+
+Gather your men, {reveal link: &quot;it has begun.&quot;, passage: &quot;???_Marquise&quot;}
+</tw-passagedata><tw-passagedata pid="35" name="Duchy History" tags="" position="836,540.0954451560974" size="100,100">Princess Molealisa’s family were powerful, everyone she was related to had influence in some way or the other. The Lords and Ladies of the Duchy dismissed her at first, used to dealing with power and people pushing influence at dinner parties.
+
+However, she eventually charms everyone she meets. Not because she uses this influence… No, she was just… pure. She would never shut up about the Up World. Most thought her assignment as the Duchess of Discovery was just to appease her family, a useless title to satisfy the nobility.
+
+She took it to heart, collecting any lost scrap that found its ways to the tunnels. Every chance she got she talked to the Lords and Ladies about the Up World. An ancient scroll with pictures of a garden with apples, an Eyrie Roost, rabbit people and cat folk. The plays she put on for the commoners about the Great Woodland and its secret ruins, of dashing vagabonds and explosions, of tyrannical cats and beautiful gardens with scaly dragons. Of a brave mole that vanquished the dragon.
+
+Was the Up World really that beautiful? You and your men believed her, you were sick of fighting the petty wars of the Nobility, there was no where left to tunnel… 
+
+Nowhere, except Up. You will conquer this world,  {reveal link: &quot;for her.&quot;, passage: &quot;???_Duchy&quot;}</tw-passagedata><tw-passagedata pid="36" name="???_Marquise" tags="" position="692.3817806243896,675.0954451560974" size="100,100">[[נפל מהעץ -&gt;???]]</tw-passagedata><tw-passagedata pid="37" name="???_Duchy" tags="" position="834,668.8134574890137" size="100,100">duchyFinish: true
+--
+[[שתלנו אותו עמוק-&gt;???]]</tw-passagedata><tw-passagedata pid="38" name="???_Vagabond" tags="" position="957,667.8134574890137" size="100,100">vagabondFinish: true
+--
+[[???&lt;-שורשיו צמחו חופשיים]]</tw-passagedata><tw-passagedata pid="39" name="שורשיו צמחו חופשיים" tags="" position="1003,838.8134574890137" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="???_Riverfolk" tags="" position="1082.3817806243896,665.0954451560974" size="100,100">riverfolkFinish: true
+--
+[[???&lt;-האכלנו אותו אוכל ומים ]]</tw-passagedata><tw-passagedata pid="41" name="???_Alliance" tags="" position="1194.3817806243896,662.0954451560974" size="100,100">allianceFinish: true
+--
+[[???&lt;-אבל רק שנאה גרמה לו לצמוח]]</tw-passagedata><tw-passagedata pid="42" name="???_Lizard" tags="" position="1327.3817806243896,667.0954451560974" size="100,100">lizardFinish: true
+--
+[[???&lt;-שנאה היא גן בליבם של כולם]]</tw-passagedata></tw-storydata><script>!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=28)}([function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.get=t.set=t.defaults=void 0;var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};t.init=function(){var e=(0,u.ifid)(),t=(0,u.name)();if(void 0===t)throw new Error("Cannot set up state: the story has no name");d="chapbook-state-"+t+"-"+e},t.reset=v,t.sameObject=function(e,t){for(var n=e.split("."),r=t.split("."),o=0;o<n.length&&o<r.length;o++)if(n[o]!==r[o])return!1;return!0},t.setDefault=function(e,t){var n=y(e);f('Defaulting "'+e+'" to '+JSON.stringify(t)),(0,i.default)(h,e,t),m(window,e),null==n&&a.default.emit("state-change",{name:e,value:t,previous:n})},t.setLookup=function(e,t){var n=y(e);f("Adding lookup variable "+e),(0,i.default)(g,e,t),function(e,t){if(!e[t]){for(var n=t.split("."),r=n[n.length-1],o=0;o<n.length-1;o++)e[n[o]]=e[n[o]]||{},e=e[n[o]];Object.defineProperty(e,r,{get:function(){return y(t)},set:function(){throw new Error("Chapbook lookup variables may only be read.")},configurable:!0})}}(window,e),null==n&&a.default.emit("state-change",{name:e,value:y(e),previous:n})},t.saveToObject=w,t.restoreFromObject=_,t.canSaveToStorage=x,t.saveToStorage=k,t.canRestoreFromStorage=function(){return x()&&null!==window.localStorage.getItem(d)},t.restoreFromStorage=function(){f("Restoring variables from local storage"),_(JSON.parse(window.localStorage.getItem(d))),f("Restore complete")},t.purgeFromStorage=function(e){e||f("Purging variables from local storage");_(JSON.parse(window.localStorage.getItem(d))),e||f("Purge complete")},t.varNames=function(e){function t(e,n){var o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];return Object.keys(e).reduce(function(o,i){if("object"===r(e[i])&&e[i]&&!Array.isArray(e[i]))t(e[i],n?n+"."+i:i,o);else{var s=n?n+"."+i:i;-1===o.indexOf(s)&&o.push(s)}return o},o)}if(e)return t(h,null,t(p,null)).sort();return t(p).sort()};var o=c(n(34)),i=c(n(35)),s=c(n(37)),a=c(n(1)),l=c(n(4)),u=n(6);function c(e){return e&&e.__esModule?e:{default:e}}var f=(0,l.default)("state").log,d=void 0,p={},h={},g={};function m(e,t){if(!e[t]){Object.defineProperty(e,t,{get:function(){return y(t)},set:function(e){b(t,e)},configurable:!0});var n=t.split(".");n.length>1&&(n.pop(),m(e,n.join(".")))}}function v(){!function e(t,n){Object.keys(t).forEach(function(o){var i,l,u=""===n?o:n+"."+o;if("object"!==r(t[o])||Array.isArray(t[o])){var c=t[o];delete t[o],i=window,l=n,(0,s.default)(i,l),a.default.emit("state-change",{name:u,value:y(u),previous:c})}else e(t[o],u)})}(p,""),a.default.emit("state-reset"),y("config.state.autosave")&&k()}function b(e,t){var n=y(e);(0,i.default)(p,e,t),m(window,e),t!==n&&a.default.emit("state-change",{name:e,previous:n,value:t}),y("config.state.autosave")&&k()}function y(e){var t=(0,o.default)(g,e);if("function"==typeof t)return t(y,b);var n=(0,o.default)(p,e);return null==n?(0,o.default)(h,e):n}function w(){return Object.assign({},p)}function _(e){v(),Object.keys(e).forEach(function(t){return b(t,e[t])})}function x(){try{return window.localStorage.setItem("chapbook-test","a"),window.localStorage.removeItem("chapbook-test"),!0}catch(e){return!1}}function k(){f("Saving to local storage: "+JSON.stringify(w())),window.localStorage.setItem(d,JSON.stringify(w())),f("Save complete")}t.defaults={"config.state.autosave":!0},t.set=b,t.get=y},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r,o=n(30),i=(r=o)&&r.__esModule?r:{default:r};t.default=(0,i.default)()},function(e,t,n){"use strict";n.r(t),n.d(t,"h",function(){return a}),n.d(t,"createElement",function(){return a}),n.d(t,"cloneElement",function(){return f}),n.d(t,"createRef",function(){return q}),n.d(t,"Component",function(){return D}),n.d(t,"render",function(){return R}),n.d(t,"rerender",function(){return g}),n.d(t,"options",function(){return o});var r=function(){},o={},i=[],s=[];function a(e,t){var n,a,l,u,c=s;for(u=arguments.length;u-- >2;)i.push(arguments[u]);for(t&&null!=t.children&&(i.length||i.push(t.children),delete t.children);i.length;)if((a=i.pop())&&void 0!==a.pop)for(u=a.length;u--;)i.push(a[u]);else"boolean"==typeof a&&(a=null),(l="function"!=typeof e)&&(null==a?a="":"number"==typeof a?a=String(a):"string"!=typeof a&&(l=!1)),l&&n?c[c.length-1]+=a:c===s?c=[a]:c.push(a),n=l;var f=new r;return f.nodeName=e,f.children=c,f.attributes=null==t?void 0:t,f.key=null==t?void 0:t.key,void 0!==o.vnode&&o.vnode(f),f}function l(e,t){for(var n in t)e[n]=t[n];return e}function u(e,t){null!=e&&("function"==typeof e?e(t):e.current=t)}var c="function"==typeof Promise?Promise.resolve().then.bind(Promise.resolve()):setTimeout;function f(e,t){return a(e.nodeName,l(l({},e.attributes),t),arguments.length>2?[].slice.call(arguments,2):e.children)}var d=/acit|ex(?:s|g|n|p|$)|rph|ows|mnc|ntw|ine[ch]|zoo|^ord/i,p=[];function h(e){!e._dirty&&(e._dirty=!0)&&1==p.push(e)&&(o.debounceRendering||c)(g)}function g(){for(var e;e=p.pop();)e._dirty&&$(e)}function m(e,t){return e.normalizedNodeName===t||e.nodeName.toLowerCase()===t.toLowerCase()}function v(e){var t=l({},e.attributes);t.children=e.children;var n=e.nodeName.defaultProps;if(void 0!==n)for(var r in n)void 0===t[r]&&(t[r]=n[r]);return t}function b(e){var t=e.parentNode;t&&t.removeChild(e)}function y(e,t,n,r,o){if("className"===t&&(t="class"),"key"===t);else if("ref"===t)u(n,null),u(r,e);else if("class"!==t||o)if("style"===t){if(r&&"string"!=typeof r&&"string"!=typeof n||(e.style.cssText=r||""),r&&"object"==typeof r){if("string"!=typeof n)for(var i in n)i in r||(e.style[i]="");for(var i in r)e.style[i]="number"==typeof r[i]&&!1===d.test(i)?r[i]+"px":r[i]}}else if("dangerouslySetInnerHTML"===t)r&&(e.innerHTML=r.__html||"");else if("o"==t[0]&&"n"==t[1]){var s=t!==(t=t.replace(/Capture$/,""));t=t.toLowerCase().substring(2),r?n||e.addEventListener(t,w,s):e.removeEventListener(t,w,s),(e._listeners||(e._listeners={}))[t]=r}else if("list"!==t&&"type"!==t&&!o&&t in e){try{e[t]=null==r?"":r}catch(e){}null!=r&&!1!==r||"spellcheck"==t||e.removeAttribute(t)}else{var a=o&&t!==(t=t.replace(/^xlink:?/,""));null==r||!1===r?a?e.removeAttributeNS("http://www.w3.org/1999/xlink",t.toLowerCase()):e.removeAttribute(t):"function"!=typeof r&&(a?e.setAttributeNS("http://www.w3.org/1999/xlink",t.toLowerCase(),r):e.setAttribute(t,r))}else e.className=r||""}function w(e){return this._listeners[e.type](o.event&&o.event(e)||e)}var _=[],x=0,k=!1,S=!1;function j(){for(var e;e=_.shift();)o.afterMount&&o.afterMount(e),e.componentDidMount&&e.componentDidMount()}function O(e,t,n,r,o,i){x++||(k=null!=o&&void 0!==o.ownerSVGElement,S=null!=e&&!("__preactattr_"in e));var s=C(e,t,n,r,i);return o&&s.parentNode!==o&&o.appendChild(s),--x||(S=!1,i||j()),s}function C(e,t,n,r,o){var i=e,s=k;if(null!=t&&"boolean"!=typeof t||(t=""),"string"==typeof t||"number"==typeof t)return e&&void 0!==e.splitText&&e.parentNode&&(!e._component||o)?e.nodeValue!=t&&(e.nodeValue=t):(i=document.createTextNode(t),e&&(e.parentNode&&e.parentNode.replaceChild(i,e),M(e,!0))),i.__preactattr_=!0,i;var a,l,u=t.nodeName;if("function"==typeof u)return function(e,t,n,r){var o=e&&e._component,i=o,s=e,a=o&&e._componentConstructor===t.nodeName,l=a,u=v(t);for(;o&&!l&&(o=o._parentComponent);)l=o.constructor===t.nodeName;o&&l&&(!r||o._component)?(N(o,u,3,n,r),e=o.base):(i&&!a&&(T(i),e=s=null),o=L(t.nodeName,u,n),e&&!o.nextBase&&(o.nextBase=e,s=null),N(o,u,1,n,r),e=o.base,s&&e!==s&&(s._component=null,M(s,!1)));return e}(e,t,n,r);if(k="svg"===u||"foreignObject"!==u&&k,u=String(u),(!e||!m(e,u))&&(a=u,(l=k?document.createElementNS("http://www.w3.org/2000/svg",a):document.createElement(a)).normalizedNodeName=a,i=l,e)){for(;e.firstChild;)i.appendChild(e.firstChild);e.parentNode&&e.parentNode.replaceChild(i,e),M(e,!0)}var c=i.firstChild,f=i.__preactattr_,d=t.children;if(null==f){f=i.__preactattr_={};for(var p=i.attributes,h=p.length;h--;)f[p[h].name]=p[h].value}return!S&&d&&1===d.length&&"string"==typeof d[0]&&null!=c&&void 0!==c.splitText&&null==c.nextSibling?c.nodeValue!=d[0]&&(c.nodeValue=d[0]):(d&&d.length||null!=c)&&function(e,t,n,r,o){var i,s,a,l,u,c=e.childNodes,f=[],d={},p=0,h=0,g=c.length,v=0,y=t?t.length:0;if(0!==g)for(var w=0;w<g;w++){var _=c[w],x=_.__preactattr_,k=y&&x?_._component?_._component.__key:x.key:null;null!=k?(p++,d[k]=_):(x||(void 0!==_.splitText?!o||_.nodeValue.trim():o))&&(f[v++]=_)}if(0!==y)for(var w=0;w<y;w++){l=t[w],u=null;var k=l.key;if(null!=k)p&&void 0!==d[k]&&(u=d[k],d[k]=void 0,p--);else if(h<v)for(i=h;i<v;i++)if(void 0!==f[i]&&(S=s=f[i],O=o,"string"==typeof(j=l)||"number"==typeof j?void 0!==S.splitText:"string"==typeof j.nodeName?!S._componentConstructor&&m(S,j.nodeName):O||S._componentConstructor===j.nodeName)){u=s,f[i]=void 0,i===v-1&&v--,i===h&&h++;break}u=C(u,l,n,r),a=c[w],u&&u!==e&&u!==a&&(null==a?e.appendChild(u):u===a.nextSibling?b(a):e.insertBefore(u,a))}var S,j,O;if(p)for(var w in d)void 0!==d[w]&&M(d[w],!1);for(;h<=v;)void 0!==(u=f[v--])&&M(u,!1)}(i,d,n,r,S||null!=f.dangerouslySetInnerHTML),function(e,t,n){var r;for(r in n)t&&null!=t[r]||null==n[r]||y(e,r,n[r],n[r]=void 0,k);for(r in t)"children"===r||"innerHTML"===r||r in n&&t[r]===("value"===r||"checked"===r?e[r]:n[r])||y(e,r,n[r],n[r]=t[r],k)}(i,t.attributes,f),k=s,i}function M(e,t){var n=e._component;n?T(n):(null!=e.__preactattr_&&u(e.__preactattr_.ref,null),!1!==t&&null!=e.__preactattr_||b(e),E(e))}function E(e){for(e=e.lastChild;e;){var t=e.previousSibling;M(e,!0),e=t}}var A=[];function L(e,t,n){var r,o=A.length;for(e.prototype&&e.prototype.render?(r=new e(t,n),D.call(r,t,n)):((r=new D(t,n)).constructor=e,r.render=P);o--;)if(A[o].constructor===e)return r.nextBase=A[o].nextBase,A.splice(o,1),r;return r}function P(e,t,n){return this.constructor(e,n)}function N(e,t,n,r,i){e._disable||(e._disable=!0,e.__ref=t.ref,e.__key=t.key,delete t.ref,delete t.key,void 0===e.constructor.getDerivedStateFromProps&&(!e.base||i?e.componentWillMount&&e.componentWillMount():e.componentWillReceiveProps&&e.componentWillReceiveProps(t,r)),r&&r!==e.context&&(e.prevContext||(e.prevContext=e.context),e.context=r),e.prevProps||(e.prevProps=e.props),e.props=t,e._disable=!1,0!==n&&(1!==n&&!1===o.syncComponentUpdates&&e.base?h(e):$(e,1,i)),u(e.__ref,e))}function $(e,t,n,r){if(!e._disable){var i,s,a,u=e.props,c=e.state,f=e.context,d=e.prevProps||u,p=e.prevState||c,h=e.prevContext||f,g=e.base,m=e.nextBase,b=g||m,y=e._component,w=!1,k=h;if(e.constructor.getDerivedStateFromProps&&(c=l(l({},c),e.constructor.getDerivedStateFromProps(u,c)),e.state=c),g&&(e.props=d,e.state=p,e.context=h,2!==t&&e.shouldComponentUpdate&&!1===e.shouldComponentUpdate(u,c,f)?w=!0:e.componentWillUpdate&&e.componentWillUpdate(u,c,f),e.props=u,e.state=c,e.context=f),e.prevProps=e.prevState=e.prevContext=e.nextBase=null,e._dirty=!1,!w){i=e.render(u,c,f),e.getChildContext&&(f=l(l({},f),e.getChildContext())),g&&e.getSnapshotBeforeUpdate&&(k=e.getSnapshotBeforeUpdate(d,p));var S,C,E=i&&i.nodeName;if("function"==typeof E){var A=v(i);(s=y)&&s.constructor===E&&A.key==s.__key?N(s,A,1,f,!1):(S=s,e._component=s=L(E,A,f),s.nextBase=s.nextBase||m,s._parentComponent=e,N(s,A,0,f,!1),$(s,1,n,!0)),C=s.base}else a=b,(S=y)&&(a=e._component=null),(b||1===t)&&(a&&(a._component=null),C=O(a,i,f,n||!g,b&&b.parentNode,!0));if(b&&C!==b&&s!==y){var P=b.parentNode;P&&C!==P&&(P.replaceChild(C,b),S||(b._component=null,M(b,!1)))}if(S&&T(S),e.base=C,C&&!r){for(var D=e,R=e;R=R._parentComponent;)(D=R).base=C;C._component=D,C._componentConstructor=D.constructor}}for(!g||n?_.push(e):w||(e.componentDidUpdate&&e.componentDidUpdate(d,p,k),o.afterUpdate&&o.afterUpdate(e));e._renderCallbacks.length;)e._renderCallbacks.pop().call(e);x||r||j()}}function T(e){o.beforeUnmount&&o.beforeUnmount(e);var t=e.base;e._disable=!0,e.componentWillUnmount&&e.componentWillUnmount(),e.base=null;var n=e._component;n?T(n):t&&(null!=t.__preactattr_&&u(t.__preactattr_.ref,null),e.nextBase=t,b(t),A.push(e),E(t)),u(e.__ref,null)}function D(e,t){this._dirty=!0,this.context=t,this.props=e,this.state=this.state||{},this._renderCallbacks=[]}function R(e,t,n){return O(n,e,{},!1,t,!1)}function q(){return{}}l(D.prototype,{setState:function(e,t){this.prevState||(this.prevState=this.state),this.state=l(l({},this.state),"function"==typeof e?e(this.state,this.props):e),t&&this._renderCallbacks.push(t),h(this)},forceUpdate:function(e){e&&this._renderCallbacks.push(e),$(this,2)},render:function(){}});var z={h:a,createElement:a,cloneElement:f,createRef:q,Component:D,render:R,rerender:g,options:o};t.default=z},function(e,t){e.exports=function(){throw new Error("define cannot be used indirect")}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.warn=t.log=t.defaults=void 0,t.default=function(e){return{log:function(t){l(e,t)},warn:function(t){u(e,t)}}};var r,o=n(1),i=(r=o)&&r.__esModule?r:{default:r},s=n(0);t.defaults={"config.logger.show.parse":!1,"config.logger.show.render":!1,"config.logger.show.sound":!1,"config.logger.show.state":!1,"config.logger.show.story":!1,"config.logger.show.style":!1};function a(e){return e+": "}function l(e,t){(0,s.get)("config.logger.show."+e)&&console.log(a(e)+t),i.default.emit("log",{source:e,message:t})}function u(e,t){console.warn(a(e)+t),i.default.emit("log-warning",{source:e,message:t})}t.log=l,t.warn=u,window.logger={log:l,warn:u}},function(e,t,n){"use strict";function r(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[],r=document.createElement(e);return Object.keys(t).forEach(function(e){void 0!==t[e]&&r.setAttribute(e,t[e])}),n.forEach(function(e){"string"==typeof e?r.appendChild(document.createTextNode(e)):r.appendChild(e)}),r}Object.defineProperty(t,"__esModule",{value:!0}),t.domify=r,t.default=function(){return r.apply(void 0,arguments).outerHTML}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.passages=void 0,t.loadFromData=function(e){["name","creator","ifid","options"].forEach(function(t){return u[t]=e.getAttribute(t)}),u.startNode=parseInt(e.getAttribute("startnode")),u.creatorVersion=e.getAttribute("creator-version");var t=function(e){return e.map(function(e){return e.textContent})};u.customScripts=t((0,s.selectAll)(e,'[type="text/twine-javascript"]')),u.customStyles=t((0,s.selectAll)(e,'[type="text/twine-css"]')),c=(0,s.selectAll)(e,"tw-passagedata").map(function(e){var t={id:parseInt(e.getAttribute("pid")),name:e.getAttribute("name"),source:e.textContent},n=e.getAttribute("tags");return t.tags=n?n.split(" "):[],t})},t.init=function(){(0,a.setDefault)("trail",[d().name]),(0,a.setDefault)("config.testing","string"==typeof u.options&&-1!==u.options.indexOf("debug")||!1),document.title=u.name},t.runCustomScripts=function(){l.log("Running custom scripts ("+u.customScripts.length+")"),u.customScripts.forEach(function(e){new Function(e).apply(window)})},t.addCustomStyles=function(){l.log("Adding custom styles ("+u.customStyles.length+")"),u.customStyles.forEach(function(e){var t=document.createElement("style");t.innerHTML=e,document.head.appendChild(t)})},t.ifid=function(){return u.ifid},t.name=function(){return u.name},t.exportedPassages=f,t.startPassage=d,t.passageNamed=function(e){return c.find(function(t){return t.name===e})},t.passageWithId=function(e){return c.find(function(t){return t.id===e})};var r,o=n(4),i=(r=o)&&r.__esModule?r:{default:r},s=n(7),a=n(0);var l=(0,i.default)("story"),u={customScripts:[],customStyles:[]},c=[];function f(){return c}function d(){return c.find(function(e){return e.id===u.startNode})}t.passages=f},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.select=function(e,t){return e.querySelector(t)},t.selectAll=function(e,t){return Array.from(e.querySelectorAll(t))}},function(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),e.webpackPolyfill=1),e}},function(e,t){(function(t){e.exports=t}).call(this,{})},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(2);n(46);t.default=class extends r.Component{constructor(e){super(e),this.state={open:void 0===this.props.initiallyOpen||this.props.initiallyOpen}}toggle(){this.setState({open:!this.state.open})}render(){return(0,r.h)("div",{class:"panel"+(this.state.open?" open":"")},(0,r.h)("h2",null,(0,r.h)("button",{onClick:()=>this.toggle()},this.props.title)),this.state.open&&(0,r.h)("div",{class:"content"},this.props.children))}}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.defaults=void 0,t.render=function(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return(0,s.default)((0,i.default)(e),(0,a.get)("config.template.inserts")||[],(0,a.get)("config.template.modifiers")||[],t)};var r=l(n(60)),o=l(n(84)),i=l(n(94)),s=l(n(96)),a=n(0);function l(e){return e&&e.__esModule?e:{default:e}}t.defaults={"config.template.inserts":r.default,"config.template.modifiers":o.default}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.defaults=void 0,t.init=function(){(0,a.init)(),(0,l.init)(),h=document.querySelector("#page article"),m=document.querySelector("#page #spinner"),g={},["header","footer"].forEach(function(e){g[e]={container:document.querySelector("#page "+e)},["left","center","right"].forEach(function(t){g[e][t]=document.querySelector("#page "+e+" ."+t)})}),o.default.on("state-change",function(e){var t=e.name;return y("trail"===t)}),["change","click"].forEach(function(e){document.body.addEventListener(e,function(e){for(var t=e.target;t;)t.dataset&&Object.keys(t.dataset).some(function(e){return/^cb[A-Z]/.test(e)})&&o.default.emit("dom-"+e.type,t),t=t.parentNode})})},t.changeBody=function(e){(0,d.selectAll)(h,"input").forEach(function(e){e.setAttribute("value",e.value)}),(0,d.selectAll)(h,"select").forEach(function(e){for(var t=0;t<e.options.length;t++)t===e.options.selectedIndex?e.options[t].setAttribute("selected",""):e.options[t].removeAttribute("selected")});var t={x:window.scrollX,y:window.scrollY},n=h.innerHTML,r=document.createElement("div");for(;h.firstChild;)r.insertBefore(h.firstChild,r.firstChild);h.innerHTML=n,e(r),window.scrollX=t.x,window.scrollY=t.y,b(h,r.innerHTML,(0,s.get)("config.body.transition.name"),(0,s.get)("config.body.transition.duration"))};var r=p(n(20)),o=p(n(1)),i=n(64),s=n(0),a=n(66),l=n(69),u=n(6),c=n(11),f=p(n(71));n(72);var d=n(7);function p(e){return e&&e.__esModule?e:{default:e}}var h=void 0,g=void 0,m=void 0,v={crossfade:i.crossfade,fadeInOut:i.fadeInOut,none:i.none};t.defaults={"config.body.transition.name":"crossfade","config.body.transition.duration":"500ms","config.header.left":"","config.header.center":"","config.header.right":"","config.header.transition.name":"none","config.header.transition.duration":"500ms","config.footer.left":"_{story.name}_","config.footer.center":"","config.footer.right":"{restart link}","config.footer.transition.name":"none","config.footer.transition.duration":"500ms"};function b(e,t,n,r){v[n]?v[n](e,t,r):v.none(e,t)}var y=(0,r.default)(function(e){if(e.some(function(e){return e[0]})){var t=(0,s.get)("trail"),n=(0,u.passageNamed)(t[t.length-1]);if(!n)throw new Error('There is no passage named "'+t[t.length-1]+'".');window.scrollTo(0,0),b(h,(0,c.render)(n.source),(0,s.get)("config.body.transition.name"),(0,s.get)("config.body.transition.duration")),(0,f.default)(h,m)}["header","footer"].forEach(function(e){g[e].container.classList.remove("has-content"),["left","center","right"].forEach(function(t){var n=(0,c.render)((0,s.get)("config."+e+"."+t));""!==n&&g[e].container.classList.add("has-content"),b(g[e][t],n,(0,s.get)("config."+e+".transition.name"),(0,s.get)("config."+e+".transition.duration"))})})})},function(e,t,n){"use strict";e.exports=function(e,t,n){n=Object.assign({},r,n||{});let o=0,s=function(e){let t={ms:.001,s:1,m:60,h:3600};return t.d=e.hoursPerDay*t.h,t.w=e.daysPerWeek*t.d,t.mth=e.daysPerYear/e.monthsPerYear*t.d,t.y=e.daysPerYear*t.d,t}(n),a=e.toLowerCase().replace(/[^.\w+-]+/g,"").match(/[-+]?[0-9.]+[a-z]+/g);null!==a&&a.forEach(e=>{let t=e.match(/[0-9.]+/g)[0],n=e.match(/[a-z]+/g)[0];o+=function(e,t,n){return e*n[i(t)]}(t,n,s)});if(t)return function(e,t,n){return e/n[i(t)]}(o,t,s);return o};const r={hoursPerDay:24,daysPerWeek:7,weeksPerMonth:4,monthsPerYear:12,daysPerYear:365.25},o={ms:["ms","milli","millisecond","milliseconds"],s:["s","sec","secs","second","seconds"],m:["m","min","mins","minute","minutes"],h:["h","hr","hrs","hour","hours"],d:["d","day","days"],w:["w","week","weeks"],mth:["mon","mth","mths","month","months"],y:["y","yr","yrs","year","years"]};function i(e){for(let t of Object.keys(o))if(o[t].indexOf(e)>-1)return t;throw new Error(`The unit [${e}] is not supported by timestring`)}},function(e,t){function n(e,t){if(!e)throw new Error(t||"AssertionError")}n.notEqual=function(e,t,r){n(e!=t,r)},n.notOk=function(e,t){n(!e,t)},n.equal=function(e,t,r){n(e==t,r)},n.ok=n,e.exports=n},function(e,t,n){"use strict";
 /*!
  * isobject <https://github.com/jonschlinkert/isobject>
  *
