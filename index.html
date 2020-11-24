@@ -21,7 +21,7 @@ setup.loadScript = function(url, onloadFunction) {
   newScript.async = true;
   newScript.src = url;
 };
-</script><tw-passagedata pid="1" name="A Story of Root" tags="paper" position="132,159" size="100,100">birdFinish: false
+</script><tw-passagedata pid="1" name="A Story of Root" tags="paper" position="130,159" size="100,100">birdFinish: false
 marquiseFinish: false
 duchyFinish: false
 vagabondFinish: false
@@ -195,8 +195,11 @@ For the Sensei to finally bow to you…
 You are ready. 
 
 {reveal link: &quot;You are the Lord of the Forest&quot;, passage: &quot;???_Eyrie&quot;}
-</tw-passagedata><tw-passagedata pid="13" name="???" tags="" position="436,80" size="100,100">response: &quot;Back&quot;
+</tw-passagedata><tw-passagedata pid="13" name="???" tags="" position="434,79" size="100,100">response: &quot;Back&quot;
 birdFinish ( shogun &amp;&amp; eyrie ) : true 
+
+all_finish: false
+all_finish (secret_lizard_correct &amp;&amp; secret_eyrie_correct &amp;&amp; secret_marquise_correct &amp;&amp; secret_duchy_correct &amp;&amp; secret_vagabond_correct &amp;&amp; secret_riverfolk_correct &amp;&amp; secret_alliance_correct): true
 --
 [Javascript]
 list_vars = [{var: &quot;secret_eyrie&quot;, password: &quot;after the apple&quot;}, 
@@ -335,12 +338,19 @@ secret_lizard: &quot;&quot;
 &lt;/style&gt;
 
 {embed passage: &quot;Rune_Button_JS&quot;}
+[if all_finish === false]
 [align center]
 &lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;???&quot;&gt;
 &lt;button class=&quot;button&quot; style=&quot;width: 20%&quot;&gt;
 &lt;img src=&quot;img/apple_snake.png&quot;&gt;
 &lt;/button&gt;
 &lt;/a&gt;
+[else]
+[align center]
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;???&quot;&gt;
+&lt;img src=&quot;img/apple_snake_complete.png&quot; style=&quot;width: 20%&quot;&gt;
+&lt;/a&gt;
+
 </tw-passagedata><tw-passagedata pid="18" name="ThreeJS" tags="" position="81,929" size="100,100">:: StoryTitle
 Chapbook: Importing External JS
 
@@ -721,6 +731,11 @@ Whatever they tell you, we’re not a ‘group’ or ‘organization’ or ‘re
 Let’s blow them all up. For the Alliance. Hand me the explosives.
 </tw-passagedata><tw-passagedata pid="34" name="Marquise History" tags="" position="721.3817806243896,544.0954451560974" size="100,100">marquiseFinish: true
 --
+[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
 The De Cats were a well-established noble lineage. ‘Rise, Marquis’ The court clapped as the Feline Empress crowed De Cat. The Woodland was taken over by the Feline Empire after the Eyrie Civil War. 
 
 It was large, uncontrolled and sparsely defended. It was the Marquis job to move there are put things in feline order. They didn’t even have an established currency, and used barter to move commerce between clearings.
@@ -751,7 +766,12 @@ Stomp out the unclean. Build, do it smart. You are in control.
 Marquis De Cat puts on his coat, calls those loyal to him. You benefited from the roads and infrastructure you and your Empire have built for them, and open the balcony doors to address his loyal servants. 
 
 Gather your men, {reveal link: &quot;it has begun.&quot;, passage: &quot;???_Marquise&quot;}
-</tw-passagedata><tw-passagedata pid="35" name="Duchy History" tags="" position="836,540.0954451560974" size="100,100">Princess Molealisa’s family were powerful, everyone she was related to had influence in some way or the other. The Lords and Ladies of the Duchy dismissed her at first, used to dealing with power and people pushing influence at dinner parties.
+</tw-passagedata><tw-passagedata pid="35" name="Duchy History" tags="" position="836,540.0954451560974" size="100,100">[CSS]
+#page {
+	background-image: url(&quot;img/paperparchment.jpg&quot;);
+}
+[cont&#39;d]
+Princess Molealisa’s family were powerful, everyone she was related to had influence in some way or the other. The Lords and Ladies of the Duchy dismissed her at first, used to dealing with power and people pushing influence at dinner parties.
 
 However, she eventually charms everyone she meets. Not because she uses this influence… No, she was just… pure. She would never shut up about the Up World. Most thought her assignment as the Duchess of Discovery was just to appease her family, a useless title to satisfy the nobility.
 
