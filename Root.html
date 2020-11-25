@@ -312,7 +312,8 @@ secret_lizard: &quot;&quot;
 &lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Eyrie&quot;&gt;
 &lt;button class=&quot;button&quot;&gt;Click Me&lt;/button&gt;
 &lt;/a&gt;
-</tw-passagedata><tw-passagedata pid="17" name="Rune_Button" tags="" position="567,84" size="100,100">future_text: &quot;Know what you feel.&quot;
+</tw-passagedata><tw-passagedata pid="17" name="Rune_Button" tags="" position="567,86" size="100,100">future_text: &quot;Know what you feel.&quot;
+all_finish: true
 --
 &lt;style&gt;
 .button {
@@ -335,6 +336,27 @@ secret_lizard: &quot;&quot;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+#apple {
+
+    background-color: yellow;  
+    margin:50px 50px;
+    -webkit-box-shadow:0 0 20px red; 
+    -moz-box-shadow: 0 0 20px red; 
+    box-shadow:0 0 20px red;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px red; }
+  40% { box-shadow: 0 0 20px red; }
+  60% { box-shadow: 0 0 20px red; }
+  100% { box-shadow: 0 0 -10px red; }
+}
+
+.button-glow {
+  animation: glowing 5000ms infinite;
+}
+
 &lt;/style&gt;
 
 {embed passage: &quot;Rune_Button_JS&quot;}
@@ -347,10 +369,10 @@ secret_lizard: &quot;&quot;
 &lt;/a&gt;
 [else]
 [align center]
-&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;???&quot;&gt;
-&lt;img src=&quot;img/apple_snake_complete.png&quot; style=&quot;width: 20%&quot;&gt;
-&lt;/a&gt;
 
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;???&quot;&gt;
+&lt;img class=&quot;button-glow&quot; id=&quot;apple&quot; src=&quot;img/apple_snake_complete.png&quot; style=&quot;width: 20%&quot;&gt;
+&lt;/a&gt;
 </tw-passagedata><tw-passagedata pid="18" name="ThreeJS" tags="" position="81,929" size="100,100">:: StoryTitle
 Chapbook: Importing External JS
 
@@ -565,7 +587,7 @@ We will show the world the [[Duchy History]] glory of the Duchy.
 console.log(&quot;Ayooo rune&quot;)
 
 
-[cont&#39;d]</tw-passagedata><tw-passagedata pid="26" name="The Riverfolk" tags="" position="1068,376" size="100,100">[CSS]
+[cont&#39;d]</tw-passagedata><tw-passagedata pid="26" name="The Riverfolk" tags="" position="1069,376" size="100,100">[CSS]
 #page {
 	background-image: url(&quot;img/paperparchment.jpg&quot;);
 }
@@ -660,7 +682,7 @@ Or will you get that crossbow you stashed away, and join in?
 {text input for: &#39;secret_lizard&#39;, required: false}
 [else]
 [align center]
-*Hate is a garden in the hearts of all*</tw-passagedata><tw-passagedata pid="32" name="The Lizard" tags="" position="1321.3817806243896,371.0954451560974" size="100,100">[CSS]
+*Hate is a garden in the hearts of all*</tw-passagedata><tw-passagedata pid="32" name="The Lizard" tags="" position="1320.3817806243896,371.0954451560974" size="100,100">[CSS]
 #page {
 	background-image: url(&quot;img/paperparchment.jpg&quot;);
 }
@@ -687,7 +709,7 @@ Grow a garden of peace in your heart.
 
 Take all the negative things they did to you, and leave it in the garden.
 
-Let the great Serpent feed on your hate and despair, let is all out.
+Let the great Serpent feed on your hate and despair, let it all out.
 
 You will be free, you will help others be free, to let go of their anger.
 
