@@ -24,44 +24,8 @@ setup.loadScript = function(url, onloadFunction) {
 
 setup.loadScript("https://code.jquery.com/jquery-3.5.1.min.js", function(){
 });
-setup.loadScript("https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js", function(){
-  if (annyang) {
-	// Let's define our first command. First the text we expect, and then the 
 
-	var commands = {
-	  // annyang will capture anything after a splat (*) and pass it to the function.
-	  // e.g. saying "Show me Batman and Robin" is the same as calling showFlickr('Batman and Robin');
-	  'show me *tag': showFlickr,
-
-	  // A named variable is a one word variable, that can fit anywhere in your command.
-	  // e.g. saying "calculate October stats" will call calculateStats('October');
-	  'calculate :month stats': calculateStats,
-
-	  // By defining a part of the following command as optional, annyang will respond to both:
-	  // "say hello to my little friend" as well as "say hello friend"
-	  'say hello (to my little) friend': greeting
-	};
-
-	var showFlickr = function(tag) {
-	  var url = 'http://api.flickr.com/services/rest/?tags='+tag;
-	  $.getJSON(url);
-	}
-
-	var calculateStats = function(month) {
-	  $('#stats').text('Statistics for '+month);
-	}
-
-	var greeting = function() {
-	  $('#greeting').text('Hello!');
-	}
-	// Add our commands to annyang
-	annyang.addCommands(commands);
-
-	// Start listening. You can call this here, or attach this call to an event, button, etc.
-		annyang.start()
-	
-  }
-})</script><tw-passagedata pid="1" name="A Story of Root" tags="paper" position="126,158" size="100,100">birdFinish: false
+</script><tw-passagedata pid="1" name="A Story of Root" tags="paper" position="124,158" size="100,100">birdFinish: false
 marquiseFinish: false
 duchyFinish: false
 vagabondFinish: false
@@ -245,7 +209,7 @@ For the Sensei to finally bow to you…
 You are ready. 
 
 {reveal link: &quot;You are the Lord of the Forest&quot;, passage: &quot;???_Eyrie&quot;}
-</tw-passagedata><tw-passagedata pid="13" name="???" tags="" position="434,78" size="100,100">config.style.page.font: &quot;Iowan Old Style/Constantia/Georgia/serif 18&quot;
+</tw-passagedata><tw-passagedata pid="13" name="???" tags="" position="433,77" size="100,100">config.style.page.font: &quot;Iowan Old Style/Constantia/Georgia/serif 18&quot;
 response: &quot;Back&quot;
 birdFinish ( shogun &amp;&amp; eyrie ) : true 
 
@@ -272,9 +236,7 @@ for(secret of list_vars) {
  }
 }
 
-
 [cont&#39;d]
-{no ambient sound}
 [CSS]
 #page {
 	background-image: url(&quot;img/paperparchment.jpg&quot;);
@@ -366,7 +328,7 @@ secret_lizard: &quot;&quot;
 &lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;The Eyrie&quot;&gt;
 &lt;button class=&quot;button&quot;&gt;Click Me&lt;/button&gt;
 &lt;/a&gt;
-</tw-passagedata><tw-passagedata pid="17" name="Rune_Button" tags="" position="566,86" size="100,100">future_text: &quot;Know what you feel.&quot;
+</tw-passagedata><tw-passagedata pid="17" name="Rune_Button" tags="" position="565,86" size="100,100">future_text: &quot;Know what you feel.&quot;
 --
 &lt;style&gt;
 .button {
@@ -422,11 +384,10 @@ secret_lizard: &quot;&quot;
 &lt;/a&gt;
 [else]
 [align center]
-&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;???&quot;&gt;
+&lt;a href=&quot;javascript:void(0)&quot; data-cb-go=&quot;Khan&quot;&gt;
 &lt;img class=&quot;button-glow&quot; id=&quot;apple&quot; src=&quot;img/apple_snake_complete.png&quot; style=&quot;width: 20%&quot;&gt;
 &lt;/a&gt;
-[align center]
-*Speak.*
+[cont&#39;d]
 </tw-passagedata><tw-passagedata pid="18" name="ThreeJS" tags="" position="81,929" size="100,100">:: StoryTitle
 Chapbook: Importing External JS
 
@@ -899,9 +860,9 @@ Saint Saarip records that every three hundred thirty and eight cycles.
 
 He returns to that forest. [[To keep helping it grow.-&gt;???]]
 
-</tw-passagedata><tw-passagedata pid="44" name="annyang" tags="" position="430,408.0954451560974" size="100,100">[if all_finish === true]
+</tw-passagedata><tw-passagedata pid="44" name="annyang" tags="" position="430,407.0954451560974" size="100,100">[if all_finish === true]
 [JavaScript]
-
+annyang.start()
 	annyang.addCallback(&#39;result&#39;, function(phrases) {
 	passwords = [&quot;apple&quot;, &quot;hatred&quot;]
 	for (phrase of phrases) { 
